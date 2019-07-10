@@ -10,7 +10,7 @@ const squaresInitValue = Array(9).fill(null);
 
 const Game: React.FC<IProps> = () => {
   const [squares, setSquares] = useState<Array<SquareValueType>>(squaresInitValue);
-  const [xIsNext, setXIsNext] = useState(false);
+  const [xIsNext, setXIsNext] = useState(true);
   
   const restart = () => {
     setXIsNext(true);
