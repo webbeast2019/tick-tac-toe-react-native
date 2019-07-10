@@ -1,10 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {StyleSheet, View} from 'react-native';
+import Square from './components/Square';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Testing Our App</Text>
+      <Square value={'X'} onPress={() => console.log('square')}/>
     </View>
   );
 }
