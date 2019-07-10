@@ -1,17 +1,12 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-import Board from './components/Board';
-import {SquareValueType} from './types';
+import Game from './components/Game';
 
 export default function App() {
-  const squares: Array<SquareValueType> = [
-    null, 'X', 'O',
-    'O', 'X', null,
-    null, 'X', 'O',
-  ];
+  
   return (
     <View style={styles.container}>
-      <Board squares={squares} onPress={(i: number) => console.log('square' + i)}/>
+      <Game/>
     </View>
   );
 }
